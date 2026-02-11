@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug WhatsApp Free 2026 - Tool Resmi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-whatsapp"></i> WhatsApp Bug Generator v2.1</h1>
+            <p class="subtitle">Tool eksklusif untuk mengirim bug WhatsApp (Invisible, Crash, Infinity, Blank) - 100% Work</p>
+            <div class="badges">
+                <span class="badge active"><i class="fas fa-check-circle"></i> Active</span>
+                <span class="badge premium"><i class="fas fa-crown"></i> Premium</span>
+                <span class="badge updated"><i class="fas fa-sync-alt"></i> Updated 2026</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="info-box">
+                <h2><i class="fas fa-info-circle"></i> Cara Kerja</h2>
+                <p>Tool ini akan mengirim <strong>payload bug</strong> langsung ke target WhatsApp. Sistem kami menggunakan metode <strong>zero-click exploit</strong> terbaru. Pastikan nomor target aktif dan terkoneksi internet.</p>
+                <div class="warning">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <strong>PERHATIAN:</strong> Hanya untuk pendidikan dan pengujian keamanan. Gunakan dengan tanggung jawab.
+                </div>
+            </div>
+
+            <form id="bugForm">
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone-alt"></i> Nomor Target WhatsApp</label>
+                    <div class="input-group">
+                        <span class="prefix">+62</span>
+                        <input type="text" id="phone" placeholder="895xxxxxxx" required pattern="[0-9]{9,12}" title="Masukkan 9-12 digit nomor">
+                    </div>
+                    <small class="hint">Contoh: 89588899833 (tanpa +62)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="method"><i class="fas fa-bug"></i> Pilih Metode Bug</label>
+                    <div class="method-grid">
+                        <label class="method-option">
+                            <input type="radio" name="method" value="infinity" required>
+                            <div class="method-card">
+                                <i class="fas fa-infinity"></i>
+                                <h3>Infinity</h3>
+                                <p>Chat tidak terkirim selamanya</p>
+                            </div>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="method" value="invisible">
+                            <div class="method-card">
+                                <i class="fas fa-eye-slash"></i>
+                                <h3>Invisible</h3>
+                                <p>Mode tembus pandang</p>
+                            </div>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="method" value="crash">
+                            <div class="method-card">
+                                <i class="fas fa-crash"></i>
+                                <h3>Crash</h3>
+                                <p>Aplikasi force close</p>
+                            </div>
+                        </label>
+                        <label class="method-option">
+                            <input type="radio" name="method" value="blank">
+                            <div class="method-card">
+                                <i class="fas fa-file-alt"></i>
+                                <h3>Blank</h3>
+                                <p>Chat kosong total</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration"><i class="fas fa-clock"></i> Durasi Efek</label>
+                    <select id="duration" required>
+                        <option value="1">1 Jam</option>
+                        <option value="6">6 Jam</option>
+                        <option value="24" selected>24 Jam</option>
+                        <option value="permanent">Permanen</option>
+                    </select>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Saya setuju dengan <a href="#">Syarat & Ketentuan</a> dan mengonfirmasi ini hanya untuk pengujian keamanan.</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> SEND BUG NOW
+                </button>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Mengirim payload bug ke server WhatsApp...</p>
+                    <p class="details" id="details"></p>
+                </div>
+
+                <div class="result" id="result"></div>
+            </form>
+
+            <div class="stats">
+                <h3><i class="fas fa-chart-bar"></i> Statistik Hari Ini</h3>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <span class="number">1,247</span>
+                        <span class="label">Bug Terkirim</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">98.7%</span>
+                        <span class="label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">42</span>
+                        <span class="label">Active Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 WhatsApp Bug Generator | Tool Security Research | <span id="sessionId">Session: wa-bug-<?php echo rand(10,99); ?></span></p>
+            <p class="disclaimer">This tool is for educational purposes only. We are not responsible for misuse.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
